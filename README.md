@@ -22,10 +22,10 @@ __2__) Plug you pico into a USB port while holding down the `BOOT SEL` button. I
 
 __3__) Run ``main.py`` and follow the instructions from there!
 
-## Notes
+#### Notes
 * Only works for Linux, Windows support will be added soon.
 
-# To-do
+### To-do
 - [x] Linux support
 - [ ] Windows support
 - [ ] Auto-mounting for Linux
