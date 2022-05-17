@@ -32,6 +32,6 @@ __3__) Run ``main.py`` and follow the instructions from there!
 
 ##
 
-***For more in-depth instructions go to <a href="https://github.com/dbisu">dibisu's</a> <a href="https://github.com/dbisu/pico-ducky">pico-ducky</a> repo.***
+***For more in-depth info, go to <a href="https://github.com/dbisu">dibisu's</a> <a href="https://github.com/dbisu/pico-ducky">pico-ducky</a> repo.***
 
 *If any errors, bugs, and/or questions arise, start an issue in the issues tab.*
