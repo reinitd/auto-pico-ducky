@@ -7,10 +7,10 @@
 <br />
 
 <div align="center">
-  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/qaezz/auto-pico-ducky">
-  <img alt="GitHub license" src="https://img.shields.io/github/license/qaezz/auto-pico-ducky">
-  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/qaezz/auto-pico-ducky">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/qaezz/auto-pico-ducky">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/QAEZZ/auto-pico-ducky">
+  <img alt="GitHub license" src="https://img.shields.io/github/license/QAEZZ/auto-pico-ducky">
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/QAEZZ/auto-pico-ducky">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/QAEZZ/auto-pico-ducky">
 </div>
 
 <br />
