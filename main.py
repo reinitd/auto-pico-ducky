@@ -7,12 +7,15 @@ from colorama import init, Fore, Back, Style
 
 """
 Turn your RPI Pico into a bad usb.
-pico-ducky is made by dbisu
+pico-ducky is made by dbisu.
+
 
 Made by: QÆZZ (QAEZZ)
-
 View LICENSE for legal shit or something.
+
+Enjoy this messy code...
 """
+
 def clear():
     sub.call('clear')
 
