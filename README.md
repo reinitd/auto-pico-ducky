@@ -26,4 +26,4 @@
 
 ***For more in-depth instructions go to <a href="https://github.com/dbisu">dibisu's</a> <a href="https://github.com/dbisu/pico-ducky">pico-ducky</a> repo.***
 
-*If any errors, bugs, and questions arise, start and issue in the issues tab.*
+*If any errors, bugs, and/or questions arise, start and issue in the issues tab.*
