@@ -16,11 +16,11 @@
 
 ## Install
 
-1. Download this repo as a zip or use ``git clone https://github.com/QAEZZ/auto-pico-ducky.git``
+__1__) Download this repo as a zip or use ``git clone https://github.com/QAEZZ/auto-pico-ducky.git``
 
-2. Plug you pico into a USB port while holding down the `BOOT SEL` button. It will show up as a removable media device named `RPI-RP2`.
+__2__) Plug you pico into a USB port while holding down the `BOOT SEL` button. It will show up as a removable media device named `RPI-RP2`.
 
-3. Run ``main.py`` and follow the instructions from there!
+__3__) Run ``main.py`` and follow the instructions from there!
 
 ##
 
