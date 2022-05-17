@@ -1,7 +1,7 @@
 <h1 align="center">auto-pico-ducky</h1>
 
 <div align="center">
-  <strong>Tool to turn your RPI Pico into a bad usb, powered by <a href="https://github.com/dbisu/pico-ducky" target="_blank">pico-ducky</a> by <a href="https://github.com/dbisu" target="_blank">dibisu</a></strong>
+  <strong>Tool to turn your RPI Pico into a bad usb, powered by <a href="https://github.com/dbisu/pico-ducky">pico-ducky</a> by <a href="https://github.com/dbisu">dibisu</a></strong>
 </div>
 
 <br />
@@ -13,4 +13,15 @@
 </div>
 
 <br />
-README.md is a work in progress.
+
+## Install
+
+1. Download this repo as a zip or use ``git clone https://github.com/QAEZZ/auto-pico-ducky.git``
+
+2. Plug you pico into a USB port while holding down the `BOOT SEL` button. It will show up as a removable media device named `RPI-RP2`.
+
+3. Run ``main.py`` and follow the instructions from there!
+
+***For more in-depth instructions go to href="https://github.com/dbisu">dibisu's</a> <a href="https://github.com/dbisu/pico-ducky">pico-ducky</a> repo.***
+
+*If any errors, bugs, and questions arise, start and issue in the issues tab.*
