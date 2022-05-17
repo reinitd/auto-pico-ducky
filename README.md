@@ -1,7 +1,7 @@
 <h1 align="center">auto-pico-ducky</h1>
 
 <div align="center">
-  <strong>Tool to turn your RPI Pico into a bad usb, powered by <a href="https://github.com/dbisu/pico-ducky" target="blank_">pico-ducky</a> by <a href="https://github.com/dbisu" target="blank_">dibisu</a></strong>
+  <strong>Tool to turn your RPI Pico into a bad usb, powered by <a href="https://github.com/dbisu/pico-ducky" target="_blank">pico-ducky</a> by <a href="https://github.com/dbisu" target="_blank">dibisu</a></strong>
 </div>
 
 <br />
