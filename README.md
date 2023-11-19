@@ -4,6 +4,8 @@
   <strong>Tool to turn your RPI Pico into a bad usb, powered by <a href="https://github.com/dbisu/pico-ducky">pico-ducky</a> by <a href="https://github.com/dbisu">dibisu</a></strong>
 </div>
 
+**NOTE 11/18/2023: I plan on returning to this project in the near future. The code will be completely redone.**
+
 <br />
 
 <div align="center">
