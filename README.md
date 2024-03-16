@@ -14,8 +14,8 @@
 
 <br />
 
+**NOTE 03/15/2024: I'll remake this utility if someone makes an issue. Looking back at the code, it's awful. I was so shit back then.** \
 **NOTE 11/18/2023: I plan on returning to this project in the near future. The code will be completely redone.**
-**NOTE 03/15/2024: I'll remake this utility if someone makes an issue. Looking back at the code, it's awful. I was so shit back then.**
 
 ## Install
 
