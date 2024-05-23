@@ -1,9 +1,4 @@
-﻿using System;
-using System.Diagnostics;
-using System.IO;
-using System.Runtime.InteropServices;
-
-using Newtonsoft.Json.Linq;
+﻿using System.Runtime.InteropServices;
 
 using AutoPicoDucky.Helpers;
 using AutoPicoDucky.Models;
@@ -49,11 +44,11 @@ Please press any key once done.");
 
         if (devices.Count == 0)
         {
-            Console.WriteLine("No USB drives found.");
+            Console.WriteLine("No removeable media found.");
             return;
         }
 
-        Console.WriteLine("Detected USB drives:");
+        Console.WriteLine("Detected removeable media:");
         for (int i = 0; i < devices.Count; i++)
         {
             Disk device = devices[i];
