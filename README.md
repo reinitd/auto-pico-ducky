@@ -1,2 +1,2 @@
 # Auto Pico Ducky
-This is a complete rewrite in Zig.
+This is a complete rewrite in C#.
