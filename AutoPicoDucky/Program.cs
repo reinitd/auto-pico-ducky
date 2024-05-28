@@ -13,10 +13,13 @@ class Program
         bool isLinux = RuntimeInformation.IsOSPlatform(OSPlatform.Linux);
         bool isWindows = RuntimeInformation.IsOSPlatform(OSPlatform.Windows);
 
-        if (isWindows) {
+        if (isWindows)
+        {
             Console.WriteLine("Windows is not yet supported.");
             return;
-        } else if (!isLinux && !isWindows) {
+        }
+        else if (!isLinux && !isWindows)
+        {
             Console.WriteLine("Unknown and unsupported operating system type.");
             return;
         }
@@ -34,11 +37,14 @@ Please press any key once done.");
 
         List<Disk> devices = new();
 
-        if (isWindows) {
+        if (isWindows)
+        {
             // Yes, I know it already checks at the start of the program.
             Console.WriteLine("Windows is not yet supported.");
             return;
-        } else {
+        }
+        else
+        {
             devices = GetDevices.ForLinux();
         }
 
@@ -55,19 +61,21 @@ Please press any key once done.");
             List<string>? mountpoints = device.Mountpoints;
             string mountpointsStr = string.Join(", ", mountpoints!.Where(mp => mp != null).Select(mp => mp.ToString())).Trim();
 
-            if (mountpointsStr == "") {
+            if (mountpointsStr == "")
+            {
                 mountpointsStr = "Not mounted.";
             }
 
             Console.WriteLine($" [{i}] {device.Name}: Size: {device.Size}, Mount(s): {mountpointsStr}");
         }
-        
+
         (bool success, int selection) result = Selection.Handle(
             devices.Cast<dynamic>().ToList(), "\nIf selected, not mounted drives will automatically be mounted.",
             "Input the number of the RPI Pico: "
         );
 
-        if (!result.success || result.selection == -1) {
+        if (!result.success || result.selection == -1)
+        {
             return;
         }
 
@@ -75,6 +83,37 @@ Please press any key once done.");
 
         Console.WriteLine($"\nSelected RPI Pico: {pico.Name}");
 
+
+        List<string> options = new List<string> { "Nuke", "Setup" };
+        for (int i = 0; i < options.Count; i++)
+        {
+            string option = options[i];
+            Console.WriteLine($" [{i}] {option}");
+        }
+
+        result = Selection.Handle(
+            options.Cast<dynamic>().ToList(), "", "Select option: "
+        );
+
+        if (!result.success || result.selection == -1)
+        {
+            return;
+        }
+
+
+        switch (result.selection)
+        {
+            case 0:
+                NukePico.Nuke("/dev/sdb");
+                break;
+            case 1:
+                // Download files and put them on the Pico.
+                break;
+            default:
+                break;
+        }
+
+        Console.WriteLine("Nothing done, still WIP.");
 
     }
 }
