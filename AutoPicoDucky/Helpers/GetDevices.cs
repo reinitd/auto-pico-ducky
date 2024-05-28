@@ -30,13 +30,7 @@ public static class GetDevices
 
             foreach (JToken blockDeviceToken in data["blockdevices"])
             {
-                // JObject blockDevice = (JObject)blockDeviceToken;
                 Disk disk = blockDeviceToken.ToObject<Disk>();
-
-                // bool isRemovable = disk["rm"].Value<bool>();
-                // string type = disk["type"].Value<string>();
-                // bool isReadOnly = disk["ro"].Value<bool>();
-                // JArray mountpoints = (JArray)disk["mountpoints"];
 
                 bool isRemovable = disk.Rm;
                 string type = disk.Type;

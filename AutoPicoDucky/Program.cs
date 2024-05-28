@@ -53,7 +53,6 @@ Please press any key once done.");
         {
             Disk device = devices[i];
             List<string>? mountpoints = device.Mountpoints;
-            // string mountpointsStr = string.Join(", ", mountpoints.Select(mp => mp.ToString())).Trim();
             string mountpointsStr = string.Join(", ", mountpoints!.Where(mp => mp != null).Select(mp => mp.ToString())).Trim();
 
             if (mountpointsStr == "") {
@@ -62,27 +61,20 @@ Please press any key once done.");
 
             Console.WriteLine($" [{i}] {device.Name}: Size: {device.Size}, Mount(s): {mountpointsStr}");
         }
-
-        Console.WriteLine("\nIf selected, not mounted drives will automatically be mounted.");
-        Console.Write("Input the number of the RPI Pico: ");
-        string selectionInput = Console.ReadLine().Trim();
-        int selection;
-
-        if (!Int32.TryParse(selectionInput, out selection)) {
-            Console.WriteLine($"\nSelection '{selectionInput}' is not a valid selection.");
-            return;
-        }
         
-        if (selection >= devices.Count) {
-            Console.WriteLine("\nSelection is too high!");
-            return;
-        } else if (selection < 0) {
-            Console.WriteLine("\nSelection cannot be negative, silly!");
+        (bool success, int selection) result = Selection.Handle(
+            devices.Cast<dynamic>().ToList(), "\nIf selected, not mounted drives will automatically be mounted.",
+            "Input the number of the RPI Pico: "
+        );
+
+        if (!result.success || result.selection == -1) {
             return;
         }
 
-        Disk pico = devices[selection];
+        Disk pico = devices[result.selection];
 
         Console.WriteLine($"\nSelected RPI Pico: {pico.Name}");
+
+
     }
 }
